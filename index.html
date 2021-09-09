@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>HTML - Documentation Page</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <nav id="navbar" class="overflow-auto">
+                    <ul class="nav flex-column">
+                        <header>HTML Documentation</header>
+                        <li class="nav-item">
+                            <a class="nav-link introduction" href="#Introduction">Introduction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link content" href="#Basic">Basic</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link components" href="#Elements">Elements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link reference" href="#Attributes">Attributes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link reference" href="#Headings">Headings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link reference" href="#Styles">Styles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link reference" href="#Formatting">Formatting</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link reference" href="#Comments">Comments</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link reference" href="#Links">Links</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link reference" href="#Tables">Tables</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-9">
+                <main id="main-doc">
+                    <div class="head-box">
+                        <h1>HTML</h1>
+                    </div>
+                    <section class="main-section" id="Introduction">
+                        <header>
+                            <h2>Introduction</h2>
+                        </header>
+                        <article>
+                            <h3>What is HTML?</h3>
+                            <ul>
+                                <li>HTML stands for Hyper Text Markup Language</li>
+                                <li>HTML is the standard markup language for creating Web pages</li>
+                                <li>HTML describes the structure of a Web page</li>
+                                <li>HTML consists of a series of elements</li>
+                                <li>HTML elements tell the browser how to display the content</li>
+                            </ul>
+                            <h3>A Simple HTML Document</h3>
+                            <ul>
+                                <code class="codeBlock">
+                                    <div class="html-code">
+                                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                                       <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Page Title<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                                       <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My First Heading<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My first paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+                                           <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                                    </div>
+                                </code>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="main-section" id="Basic">
+                        <header>
+                            <h2>Basic</h2>
+                        </header>
+                        <article>
+                            <h3>HTML Documents</h3>
+                            <p>All HTML documents must start with a document type declaration:<code class="codespan">&lt;!DOCTYPE html&gt;</code></p>
+                            <p>The HTML document itself begins with <code class="w3-codespan">&lt;html&gt;</code> and ends with <code class="w3-codespan">&lt;/html&gt;</code>.</p>
+                            <p>The visible part of the HTML document is between <code class="w3-codespan">&lt;body&gt;</code> and <code class="w3-codespan">&lt;/body&gt;</code>. </p>
+
+                        </article>
+                    </section>
+                    <section class="main-section" id="Elements">
+                        <header>
+                            <h2>Elements</h2>
+                        </header>
+                        <article>
+                            <p>An HTML element is defined by a start tag, some content, and an end tag.</p>
+                            <h3>HTML Elements</h3>
+                            <p>The HTML <strong>element</strong> is everything from the start tag to the end tag:</p>
+                            <ul>
+                                <div style="font-size:20px;padding:10px;margin-bottom:10px;">
+                                    <span style="color:brown"><span style="color:mediumblue">&lt;</span>tagname<span style="color:mediumblue">&gt;</span></span>
+                                    Content goes here...<span style="color:brown"><span style="color:mediumblue">&lt;</span>/tagname<span style="color:mediumblue">&gt;</span></span>
+                                </div>
+                            </ul>
+                            <p>Examples of some HTML elements:</p>
+                            <ul>
+                                <div style="font-size:20px;padding:10px;margin-bottom:10px;">
+                                    <span style="color:brown"><span style="color:mediumblue">&lt;<span style="color:brown">h1</span>&gt;</span></span>My 
+                                    First Heading<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h1<span style="color:mediumblue">&gt;</span></span>
+                                </div>
+                                <div style="font-size:20px;padding:10px;margin-bottom:10px;">
+                                    <span style="color:brown"><span style="color:mediumblue">&lt;<span style="color:brown">p</span>&gt;</span></span>My 
+                                    First Paragraph<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+                                </div>
+                            </ul>
+                            <h3>Nested HTML Elements</h3>
+                            <p>HTML elements can be nested (this means that elements can contain other elements).</p>
+                            <p>All HTML documents consist of nested HTML elements.</p>
+                            <p>The following example contains four HTML elements (
+                                <code class="codespan">&lt;html&gt;</code>
+                                , 
+                                <code class="codespan">&lt;body&gt;</code>
+                                ,
+                                <code class="codespan">&lt;h1&gt;</code>
+                                and
+                                <code class="codespan">&lt;p&gt;</code>
+                                ).
+                            </p>
+                        </article>
+                    </section>
+                    <section class="main-section" id="Attributes">
+                        <header>
+                            <h2>Attributes</h2>
+                        </header>
+                        <article>
+                            <p>HTML attributes provide additional information about HTML elements.</p>
+                            <h3>HTML Attributes</h3>
+                            <ul>
+                                <li>All HTML elements can have <strong>attributes</strong></li>
+                                <li>Attributes provide <strong>additional information</strong>about elements</li>
+                                <li>Attributes are always specified in <strong>the start tag</strong></li>
+                                <li>Attributes usually come in name/value pairs like: <strong>name="value"</strong></li>
+                            </ul>
+
+                        </article>
+                    </section>
+                    <section class="main-section" id="Headings">
+                        <header>
+                            <h2>Headings</h2>
+                        </header>
+                        <article>
+                            <p>HTML headings are titles or subtitles that you want to display on a webpage.</p>
+                            <h3>HTML Headings</h3>
+                            <p>HTML headings are defined with the
+                                <code class="w3-codespan">&lt;h1&gt;</code>
+                                to 
+                                <code class="w3-codespan">&lt;h6&gt;</code>
+                                tags.
+                            </p>
+                            <p>
+                                <code class="w3-codespan">&lt;h1&gt;</code>
+                                defines the most important heading. 
+                                <code class="w3-codespan">&lt;h6&gt;</code>
+                                defines the least important heading.
+                            </p>
+                            <code class="codeBlock">
+                                <div class="html-code code-white">
+                                    <h1>Heading 1</h1>
+                                    <h2>Heading 2</h2>
+                                    <h3 class="code-h3">Heading 3</h3>
+                                    <h4>Heading 4</h4>
+                                    <h5>Heading 5</h5>
+                                    <h6>Heading 6</h6>
+                                </div>
+                            </code>
+
+                        </article>
+                    </section>
+                    <section class="main-section" id="Styles">
+                        <header>
+                            <h2>Styles</h2>
+                        </header>
+                        <article>
+                            <p>The HTML <strong>style</strong>  attribute is used to add styles to an element, such as color, font, size, and more.</p>
+                            <code class="codeBlock">
+                                <div class="html-code">
+                                    <p style="font-size:20px;color:red;">I am Red</p>
+                                    <p style="font-size:20px;color:blue;">I am Blue</p>
+                                    <p style="font-size:36px;margin:12px 0">I am Big</p>
+                                </div>
+                            </code>
+                            <h3>The HTML Style Attribute</h3>
+                            <ul>
+                                <p>Setting the style of an HTML element, can be done with the
+                                    <code class="w3-codespan">style</code>
+                                    attribute.   
+                                </p>
+                                <p>
+                                    The HTML 
+                                    <code class="w3-codespan">style</code>
+                                    attribute has the following syntax:
+                                </p>
+                                <code class="codeBlock">
+                                    <div class="html-code">
+                                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span><em>tagname</em><span class="attributecolor" style="color:red">
+                                            style<span class="attributevaluecolor" style="color:mediumblue">="<em>property</em>:<em>value;</em>"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                                    </div>
+                                </code>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="main-section" id="Formatting">
+                        <header>
+                            <h2>Formatting</h2>
+                        </header>
+                        <article>
+                            <p>HTML contains several elements for defining text with a special meaning.</p>
+                            <code class="codeBlock">
+                                <div class="html-code">
+                                   <p><b>This text is bold</b></p>
+                                   <p><i>This text is italic</i></p>
+                                   <p>
+                                    This is <sub> subscript</sub> and <sup>superscript</sup>
+                                   </p>
+                                </div>
+                            </code>
+                            <h3>HTML Formatting Elements</h3>
+                            <p>Formatting elements were designed to display special types of text:</p>
+                            <ul>
+                               <li><code class="w3-codespan">&lt;b&gt;</code> - Bold text</li>
+                               <li><code class="w3-codespan">&lt;strong&gt;</code> - Important text</li>
+                               <li><code class="w3-codespan">&lt;i&gt;</code> - Italic text</li>
+                               <li><code class="w3-codespan">&lt;em&gt;</code> - Emphasized text</li>
+                               <li><code class="w3-codespan">&lt;mark&gt;</code> - Marked text</li>
+                               <li><code class="w3-codespan">&lt;small&gt;</code> - Smaller text</li>
+                               <li><code class="w3-codespan">&lt;del&gt;</code> - Deleted text</li>
+                               <li><code class="w3-codespan">&lt;ins&gt;</code> - Inserted text</li>
+                               <li><code class="w3-codespan">&lt;sub&gt;</code> - Subscript text</li>
+                               <li><code class="w3-codespan">&lt;sup&gt;</code> - Superscript text</li>
+                            </ul>
+                        </article>
+                    </section>
+                    <section class="main-section" id="Comments">
+                        <header>
+                            <h2>Comments</h2>
+                        </header>
+                        <article>
+                            <p>HTML comments are not displayed in the browser, but they can help document your HTML source code.</p>
+                            <h3>HTML Comment Tags</h3>
+                            <p>You can add comments to your HTML source by using the following syntax:</p>
+                            <code class="codeBlock">
+                                <div class="html-code">
+                                    <span class="commentcolor" style="color:green">&lt;!-- Write your comments here --&gt;</span>
+                                </div>
+                            </code>
+                            <p>With comments you can place notifications and reminders in your HTML code:</p>
+                            <code class="codeBlock">
+                                <div class="html-code">
+                                    <span class="commentcolor" style="color:green">&lt;!-- This is a comment --&gt;</span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+                                    <br><span class="commentcolor" style="color:green">&lt;!-- Remember to add more information here --&gt;</span>
+                                </div>
+                            </code>
+                        </article>
+                    </section>
+                    <section class="main-section" id="Links">
+                        <header>
+                            <h2>Links</h2>
+                        </header>
+                        <article>
+                            <p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+                            <h3>HTML Links - Hyperlinks</h3>
+                            <p>HTML links are hyperlinks.</p>
+                            <p>You can click on a link and jump to another document.</p>
+                            <p>When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+                            <h3>HTML Links - Syntax</h3>
+                            <p>The HTML <code class="w3-codespan">&lt;a&gt;</code> tag defines a hyperlink.It has the following syntax:</p>
+                            <code class="codeBlock">
+                                <div class="html-code">
+                                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a
+                                    <span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="<i>url</i>"</span></span>
+                                    <span class="tagcolor" style="color:mediumblue">&gt;</span></span><i>link text</i><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                                </div>
+                            </code>
+                            <p>By default, links will appear as follows in all browsers:</p>
+                            <ul>
+                                <li>An unvisited link is underlined and blue</li>
+                                <li>A visited link is underlined and purple</li>
+                                <li>An active link is underlined and red</li>
+                            </ul>
+                            
+                        </article>
+                    </section>
+                    <section class="main-section" id="Tables">
+                        <header>
+                            <h2>Tables</h2>
+                        </header>
+                        <article>
+                            <p>HTML tables allow web developers to arrange data into rows and columns.</p>
+                            <code class="codeBlock">
+                                <div class="html-code">
+                                    <table class="table table-striped table-hover">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Students</th>
+                                                <th>Marks</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Satyam</td>
+                                                <td>80</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Sumit</td>
+                                                <td>70</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Harsh</td>
+                                                <td>90</td>
+                                            </tr>
+                                        </tbody>
+
+                                    </table>
+                                </div>
+                            </code>
+                            <h3>Table Cells</h3>
+                            <p>Each table cell is defined by a <code class="w3-codespan">&lt;td&gt;</code>
+                                and a 
+                                <code class="w3-codespan">&lt;/td&gt;</code>
+                                tag.
+                            </p>
+                            <p>
+                                <code class="w3-codespan">td</code> 
+                                stands for table data.
+
+                            </p>
+                            <p>
+                                Everything between <code class="w3-codespan">&lt;td&gt;</code> 
+                                and <code class="w3-codespan">&lt;/td&gt;</code>  are the content of the table cell.
+                            </p>
+                        </article>
+                    </section>
+                </main>
+            </div>
+        </div>
+</body>
+
+</html>
